@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .nav-tabs {
+        border: none;
+      }
+      .nav-tabs .nav-item {
+        border: none;
+        margin: 0;
+      }
+      .nav-tabs .nav-item .nav-link {
+        color: rgb(218, 61, 61);
+        font-size: 5rem;
+        border: none;
+        color: white;
+        background-color: transparent;
+        margin: 0;
+      }
+
+      .nav-tabs .nav-item .nav-link:hover {
+        text-decoration: underline;
+      }
+
+      .custom-p {
+        text-indent: 50px; /* Adjust the indentation as needed */
+        font-size: 3rem;
+        padding-left: 5rem;
+      }
+
+      .custom-p::first-letter {
+        font-size: 5rem; /* Adjust the size of the first letter as needed */
+        font-weight: bold; /* Optional: Make the first letter bold */
+        margin-right: 5px;
+      }
+
+      .custom-h {
+        text-indent: 50px; /* Adjust the indentation as needed */
+        font-size: 8rem;
+        font-weight: bold;
+        padding-left: 2rem;
+      }
+
+      .top-img{
+        position: relative;
+      
+       
+      }
+
+      .header-p{
+        width: 80rem;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 5rem;
+        font-size: 2.5rem;
+        font-family: cursive;
+      }
+
+      .course-nav{
+        padding: 2rem;
+        font-size: 3rem;
+        width: 100%;
+        background-color: darkblue;
+        color: white;
+        margin-right: 5rem;
+        justify-content: space-between;
+        z-index: 1000;
+        position:sticky;
+        top: 2px;
+      }
+
+      .course-detail h1{
+        font-size: 4rem;
+      }
+
+      .defence-photo:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* You can adjust the values as needed */
+        transform: scale(1.05); /* Optional: Add a slight scale effect on hover */
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+      }
+
+
+    </style>
+
+    <title>Vetnet Course</title>
+  </head>
+  <body>
+    <nav class="d-flex flex-row justify-content-center bg-primary">
+      <div
+        class="d-flex flex-row align-items-cente"
+        style="position: relative; right: 15%"
+      >
+        <img
+          src="./Images/logo.jpg"
+          alt="LOGO"
+          width="40%"
+          class="img-fluid ms-5 mt-3"
+        />
+
+        <img
+          src="./Images/company-name.jpg"
+          alt="company-name"
+          width="40%"
+          class="img-fluid ms-2 mt-3"
+        />
+      </div>
+
+      <div
+        class="d-flex align-items-center flex-column mt-4"
+        style="position: relative; right: 8%"
+      >
+        <h1 class="mb-2" style="font-size: 6rem">VETNET COURSES</h1>
+        <p style="font-size: 2.5rem">
+          Empowering Veterans for Success in the Corporate World
+        </p>
+        <p style="font-size: 2rem">On Colaboration with ISB</p>
+      </div>
+
+      <div class="d-flex flex-row me-5" style="position: relative; left: 15%">
+        <img src="./Images/isb-logo.jpg" alt="company-name" class="img-fluid" />
+      </div>
+    </nav>
+
+    <div class="d-flex flex-row">
+      
+        <p class="header-p text-uppercase text-center text-primary fw-bold  d-flex ">
+            As military service members transition to civilian life, they often encounter challenges such as industry stereotypes, limited awareness of opportunities, and skill gaps for civilian careers. <br></br>
+            In this scenario, veterans encounter impediments that delay the natural progression of their careers, restricting them to specific roles and career paths. <br></br>
+            To bridge the gap between military skills and civilian roles, ISB Executive Education and CommandHQ collaborated to co-create a bespoke programme facilitating the integration of veterans into the workforce. <br></br>
+            <br></br>
+        </p>
+
+      
+      <img
+        src="./Images//defence-image-3.png"
+        alt="defence-image"
+        class="img-fluid top-img"
+        width="33%"
+      />
+    </div>
+    <div class="d-flex flex-row course-nav ">
+        
+        <div class="d-flex flex-column justify-content-center course-detail">
+            <h1><b>DATE</b></h1>
+            <p>March, 2024 </p>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center course-detail">
+            <h1><b>DURATION</b></h1>
+            <p> 5 Months</p>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center course-detail">
+            <h1><b>FEE</b></h1>
+            <p> ₹ 4,95,000+ taxes</p>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center course-detail">
+            <h1><b>FORMAT</b></h1>
+            <p>Blended</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+          <a
+            class="nav-link active ms-5"
+            id="tab1"
+            data-bs-toggle="tab"
+            href="#content1"
+            >Overview</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ms-5"
+            id="tab2"
+            data-bs-toggle="tab"
+            href="#content2"
+            >Curriculum</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ms-5"
+            id="tab3"
+            data-bs-toggle="tab"
+            href="#content3"
+            >Faculty</a
+          >
+        </li>
+
+        <li class="nav-item">
+            <a
+              class="nav-link ms-5"
+              id="tab4"
+              data-bs-toggle="tab"
+              href="#content4"
+              >Partner Organaisation</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link ms-5"
+              id="tab4"
+              data-bs-toggle="tab"
+              href="#content5"
+              >Is this Programme for You?</a
+            >
+          </li>
+      </ul>
+    </nav>
+
+    <div class="tab-content mt-2">
+      <div class="tab-pane fade show active" id="content1">
+        <h2 class="custom-h">Overview</h2>
+        <p class="text-lg custom-p">
+          As military service members transition to civilian life, they often
+          encounter challenges such as industry stereotypes, limited awareness
+          of opportunities, and skill gaps for civilian careers. In this
+          scenario, veterans encounter impediments that delay the natural
+          progression of their careers, restricting them to specific roles and
+          career paths. Veterans may also lack awareness of the dynamic demands
+          of the civilian job market, resulting in suboptimal career choices.As
+          military service members transition to civilian life, they often
+          encounter challenges such as industry stereotypes, limited awareness
+          of opportunities, and skill gaps for civilian careers. In this
+          scenario, veterans encounter impediments that delay the natural
+          progression of their careers, restricting them to specific roles and
+          career paths. Veterans may also lack awareness of the dynamic demands
+          of the civilian job market, resulting in suboptimal career choices. To
+          bridge the gap between military skills and civilian roles, ISB
+          Executive Education and CommandHQ collaborated to co-create a bespoke
+          programme facilitating the integration of veterans into the workforce.
+          This 5-month learning intervention equips veterans with the skills,
+          mindset, and competencies required for a confident transition to job
+          roles of their choice. The programme helps learners align their life
+          experiences with job responsibilities and leverage their competencies
+          for success in the corporate world. The programme participants will
+          acquire business, managerial, and leadership skills to build a
+          personal brand, manage teams, make informed decisions, and develop
+          corporate strategies. The programme also enables the learners to
+          strategically navigate the corporate world, reshape industry
+          perceptions, and break free from stereotypes. The programme will
+          conclude with an assessment for certification purposes, which will be
+          followed by a Graduation Ceremony.
+        </p>
+      </div>
+
+      <div class="tab-pane fade" id="content2">
+        <h2 class="custom-h">Programme Curriculum</h2>
+        <p class="custom-p">The programme curriculum is organised into modules with rich pedagogy consisting of campus immersions, faculty presentations, asynchronous modules, group discussions, and case studies scheduled across five months. <br></br>
+            Module 1: Math Boot Camp<br></br>
+            Module 2: Business Writing Skills <br></br>
+            Module 3: Personal Leadership <br></br>
+            The road to becoming the leader of choice is certainly not easy. Disruptions & changing dynamics every now & then can be overwhelming for individuals. This module is designed to help leaders embrace challenges and opportunities associated with a leadership role. It will help them develop the awareness, knowledge, skills and attributes necessary to succeed as leaders. They will gain a concrete understanding of the nuances and mindsets required to meet the demands of the new role.<br></br>
+            Module 4: Economics for Managers <br></br>
+            To deliver business excellence & sustained growth in the highly competitive and dynamic business ecosystem, leaders must constantly update their understanding of what is happening inside and outside their organisation. A thorough understanding of the economic indicators will help managers manage risks and identify opportunities given the economic environment. This module will help participants develop a business edge for analysing the impact of the economy on their organisation and enhance their decision-making capabilities. <br></br>
+        
+            •	Describe opportunity cost and its importance in decision-making<br>
+            •	Define and explore the law of demand<br>
+            •	Understand the law of supply <br>
+            •	Learn profit maximisation and how to plan to achieve it <br>
+            •	Understand game theory and the different kinds of solutions it depicts <br>
+            •	Explore the concept of oligopolies and how it affects various markets <br></br>
+            Module 5: Strategy and Execution <br></br>
+
+            A strategy is only as successful as the execution that follows it. The strategic formulation is typically the anchor that companies use to achieve their vision and objective. Yet, most of these companies often encounter situations where their strategic plans fall short. The problem usually lies in execution & articulation, which requires a dynamic orchestra between internal and external stakeholders.<br></br>
+            •	Explore the connection between strategy failure and organisational misalignment <br></br>
+            •	Develop a framework for organisational alignment and execution<br></br>
+            •	Build critical dimensions of personal leadership required to effect organisational changes and execute strategy collaboratively<br></br>
+            •	Learn to mobilise resources and capabilities towards an aligned objective<br></br>
+            •   Devise a long-term plan to follow through with the strategic execution process & measure the success<br></br>
+
+            Module 6: Innovation for Business GrowthModule <br></br>
+            How do you become the organisation of choice in this era of constant disruption? A well-thought-through strategy backed by innovation can become your strongest armour in driving sustainable competitive advantage. <br></br>
+            Go beyond conventional thinking to drive breakthrough change. Be fearless in breaking legacies to question the obvious. Nurture a culture of experimentation to evolve an agile organisation. Rebuild organisational capabilities for continual innovation—plan for future contingencies.<br></br>
+            •	Re-energise, engage, and enable your teams with a growth mindset<br></br>
+            •	Identify the managerial and strategic roadblocks to implementing innovation<br></br>
+            •	Enhance your entrepreneurial leadership skills<br></br>
+            •	Imbibe a culture of innovation within your organisation<br></br>
+            •	Learn to navigate downturns and other crises confidently<br></br>
+            Module 7: Financial Analysis for Decision-Making<br></br>
+            Leaders today need cross-functional exposure for overall development. Along with the strategy & leadership skills, they need to hone their financial acumen for a holistic business perspective.<br></br>
+            There is always more than what meets the eye when it comes to numbers. In this module, you will learn how to read the “story” that comes out of the company's financial insights & use it in making informed decisions.<br></br>
+            •	Learn about the fundamentals of Financial Management <br></br>
+            •	Gain an understanding of ‘Time Value of Money’<br></br>
+            •	Analyse financial statements to extract insights<br></br>
+            •	Cash Flow Analysis<br></br>
+            •	Understand how companies make financing and investment decisions<br></br>
+            •	Understand how companies make financing and investment decisions<br></br>
+            Module 8: Data to Decisions <br></br>
+            With the digital revolution, data can be tapped at scale to drive improvements in growth and performance across product development, operations, market penetration, etc. However, without the right tools and strategies, organisations face a lag in connecting and integrating their data to generate strategic insights. This module aims at emphasising the role of business data analytics as a decision-making paradigm that can unlock huge data dividend for any company. To that end, it will deliver an understanding of<br></br>
+            •	The anatomy of data-driven decision making and data-driven organisations<br></br>
+            •	Explore a range of techniques such as clustering, recommendation algorithms, optimization, forecasting, NLP, etc. that leverage both structured and unstructured data to derive strategic insights<br></br>
+            •	Assess synergies between analytics and cloud computing to drive new business models powered by smart automation and proactive interventions<br></br>
+            •	Use predictive analytics, including, use cases of AI, neural networks, and deep learning for creating business value <br></br>
+            Module 9: Emerging Tech Shaping the Future<br></br>
+            We're living in times of transformation. The pace of tech evolution is becoming difficult for businesses to keep up with. However, leaders can't afford to be left behind. This accelerated pace of change — complemented by the technologies we use and evidenced through disruptive social, economic and political behaviours — needs a kind of different leadership. So how can we make decisions to benefit our stakeholders and communicate credibly with them given this emergent environment? This module will help you develop a 360 - degree view of the tech ecosystem & its impact on business practices.<br></br>
+            •	Develop a foundational understanding of emerging technologies and how to forecast their adoption, socialization and impact<br></br>
+            •	Understand the What, Why & How of different emerging technology: Quantum Computing in the Future, AI and ML, Gen AI, IoT, RPA, 5G, Edge computing & Blockchain<br></br>
+            •	Learn about the real-life success & failure implementation instances for these technologies<br></br>
+            •	Embrace the culture of adoption for new-age technologies<br></br>
+            Module 10: Leading Diverse Teams <br></br>
+            The role of a leader in managing a team is wider than leading a group of individuals to accomplish a common goal. It is also about establishing trust & harmony among the people of the team & setting up a culture of collaboration & growth. This module focuses on different aspects of a team structure, synergy, mutual trust and much more, which will aid the managers in ensuring their teams reach new heights.
+
+            •	Explore frameworks to understand team creation and manage team functioning effectively<br></br>
+            •	Understand the structure of different kinds of teams and leadership issues<br></br>
+            •	Embrace the power of listening to master team communication, developing empathy and managing collaboration<br></br>
+            •	Learn how to motivate, empower & engage team members<br></br>
+            •	Understand the importance of building rapport with your team members & being aware of their needs & aspirations<br></br>
+            •	Acknowledge the need to foster a culture of transparency & openness to develop connected teams<br></br>
+            •	Help foster talent for future roles
+            Module 11: Operations Management<br></br>
+            Operations strategy consists of the strategic use of functions such as manufacturing, supply chain, or service provision. Traditionally, these areas have been viewed as narrow, functional areas, and management of them was based on some simple criteria such as cost minimization. <br></br>
+            More recently, managers and business observers have understood that operations must be managed in the broader context of business strategy. In this sense, decisions on operations capabilities must fit and be consistent with the business strategy and consider the competitive environment<br></br>
+            •	Familiarize yourself with the fundamental concepts of Operations Management such as process flows, and performance measures<br></br>
+            •	Apply theoretical knowledge to real-world scenarios by analyzing a company case study<br></br>
+            •	Develop the ability to identify and address bottlenecks in business processes, including the concept of shifting bottlenecks<br></br>
+            •	Enhance quantitative analysis skills by working with reference data and computing performance matrices<br></br>
+            •	Apply quantitative methods such as Little's Law and Marginal Value Analysis in solving problems related to process efficiency and inventory management.<br></br>
+            •	Acquire practical knowledge in inventory management by exploring topics such as dealing with unpredictable variability, computing expected profit, and implementing marginal value analysis<br></br>
+            •	Evaluate the importance of perishable asset revenue management in optimizing inventory and understand its impact on overall operations.<br></br>
+            Moudle 12: Dealing with Ambiguity & Change<br></br>
+            Research shows that 70 per cent of all change management initiatives fail to reach the intended target. While planning a change is essential, the pace of an organisation’s growth is directly proportional to the openness of its leaders' approach to accepting change. 
+            The ability to bring out change smoothly and effectively is a distinguishing characteristic of successful leaders. This module will help you develop a strategic mindset for embracing and adopting change.<br></br>
+            •	Learn to identify the forces for and against change - Appreciate that change involves not only rationality but also emotions and relationships<br></br>
+            •	 Using different frameworks, understand the process of change and its stages<br></br>
+            •	Learn ways to create a suitable climate for change and how to engage and enable the organisation <br></br>
+            •	Develop an understanding of the competencies required for effective change management<br></br>
+            •	Gain context-specific insights into driving change management in organisations<br></br>
+            Module 13: Project Management <br> </br>
+
+            Every leader is expected to have a complete view of every minute detail of their project, no matter how complex or time-consuming. To deliver a project successfully, it is essential to create a sense of chaos. In the module, you will explore practical ways to explore and understand your goals from the onset of your project and consider all the elements that may affect its execution. <br></br>
+            You will learn to appreciate the importance of the triple constraints of managing a project(budget, time & scope) effectively. <br></br>
+
+            •	What is a Project, Program, or Portfolio, and how are they linked with org strategy?<br></br>
+            •	Project Management Lifecycle, Project Management Framework (Iron Triangle and associated processes)<br></br>
+            •	Role of organisational culture and structure in project management<br></br>
+            •	Triple Constraints <br></br>
+            •	Project Influencers & Project Partners<br></br>
+            •	How to select projects (risk-based criteria, strategy-based criteria, financial returns-based criteria, multi-screening methods)<br></br>
+            •	Types of Contracts, Request for Proposal/Bidding, Project Feasibility/Project Economics<br></br>
+            •	Earned Value Analysis for Project Monitoring and Control<br></br>
+            Module 14: Dealing with Diverse Stakeholders <br></br>
+            As organisations are flourishing on scaling up globally, shaking hands with global partners for expansion, stakeholder management is becoming a critical skill for every leader today. Who is your right audience? What kind of messaging would lead to a win-win? & how to develop a mutually beneficial working environment? This and so much more. <br></br>
+            Despite the importance, many leaders struggle to understand the complex dynamics presented by stakeholders. <br></br>
+            •	Distinguishing between positional power and leadership influence<br></br>
+            •	The social system for leadership influence – personal, positional, relational<br></br>
+            •	Influence tactics – direct, indirect, symbolic<br></br>
+            •	Sources of influence – trust, credibility, meaning, leadership-by-example<br></br>
+            •	Understanding barriers to wielding strategic influence<br></br>
+            •	Learn to influence without authority<br></br>
+            •	Understanding your own and other’s mindsets when it comes to change<br></br>
+            Module 15: Building a Personal Brand<br></br>
+            What will make a leader stand out in a crowd? A leader's ability to inspire confidence, gain trust, motivate & create a long-lasting impact makes them a leader of choice, one whom people would want to follow, trust, and, most importantly, aspire to be like. This module will help learners develop a compelling and commanding presence by building on their leadership brand story  & practising communication strategies for the greatest understanding and impact. <br></br>
+            •	Understand the constituents of Personal Branding and Executive Presence <br></br>
+            •	Discover traits & strengths you would like to highlight in your brand narrative<br></br>
+            •	Understand your audience to best adapt your communication strategies for maximum impact<br></br>
+            •	Become aware of using words that matter: Framing your thoughts<br></br>
+            <b>Term Assessments</b><br></br>
+            Module 16: Building a Customer-centric Mindset<br></br>
+            At its core, businesses exist to meet customer needs and wants. However, this intent often gets lost among the organisational growth & profit goals. Customer engagement and building customer trust must take centre stage for organisations to create value. This module will help you differentiate your product and service offerings to deliver a unified customer experience that offers a unique and compelling proposition to your customers.<br></br>
+            •	Understand the need for customer-centricity to compete in disruptive environments<br></br>
+            •	Appreciate the benefits of an outside-in focus as the founding principle of customer-centricity and the strategic importance of a differentiated value proposition<br></br>
+            •	Understand the key elements of a value proposition and their purpose<br></br>
+            •	Construct a compelling, deliverable value proposition for your own offerings<br></br>
+            •	Leverage the strategies for designing and delivering superior customer service <br></br>
+            
+            <b>Key Takeaways</b><br></br>
+
+            •	Navigate corporate dynamics with proficiency in interpersonal communication, corporate etiquette, and adaptability.  <br></br>
+            •	Apply transferable skills like strategic thinking, problem-solving, decision-making, critical thinking, operational excellence, and resilience from the field to the office.  <br></br>
+            •	Develop a comprehensive understanding of evolving business trends and customer preferences through an immersive back-to-school approach.  <br></br>
+            •	Hone leadership skills and foster an innovative mindset essential for success amidst uncertainties and disruptions.  <br></br>
+
+
+            
+            </p>
+      </div>
+      <div class="tab-pane fade" id="content3">
+        <h3 class="custom-h">Programme Faculty
+        </h3>
+        <p class="custom-p">
+
+            ISB Executive Education programmes are conceptualised and taught by globally renowned faculty who are leading academicians, researchers, and accomplished industry practitioners. Through their advanced research and industry consulting experience, you will learn real-world skills that will help you solve complex business challenges in your organisation.<br></br>
+            
+            Prof. Saumya Sindhwani
+            Assistant Professor of Organisational Behaviour (Practice)<br></br>
+            
+            Professor Shekhar Tomar
+            Faculty of Economics and Public Policy<br></br>
+            
+            Professor Deepak Jena
+            Faculty of Strategy & Entrepreneurship<br></br>
+            
+            Professor Prakash Bagri
+            Associate Professor of Marketing (Practice)<br></br>
+            
+            Professor Sudhir Voleti
+            Associate Professor, Marketing; Associate Dean - LRC & Faculty Alignment and Academic Director – ISB Institute of Data Science (IIDS)<br></br>
+            
+            Professor Vishal Karungulam
+            Product Leader - Google, Ex-Microsoft, Visiting Faculty, ISB<br></br>
+            
+            Professor Chandrasekhar Sripada
+            Professor of Organisational Behavior (Practice), Executive Director - Human Capital and Leadership Initiative (HCLI)<br></br>
+            
+            Professor Milind Sohoni
+            Professor of Operations Management<br></br>
+            
+            Professor Ramnarayan Subramaniam
+            Professor of Organisational Behavior (Practice)<br></br>
+            
+            Professor Vijaya Sunder M
+            Assistant Professor, Operations Management<br></br>
+            
+            Professor Ram Nidumolu
+            Professor of Organisational Behaviour at The Indian School of Business<br></br>
+            
+            Professor Rajesh Pandit
+            Faculty of management<br></br>
+            
+            Professor Siddharth S. Singh
+            Tenured Associate Professor of Marketing at the Indian School of Business<br></br>
+            </p>
+      </div>
+      <div class="tab-pane fade in active" id="content4">
+        <h2 class="custom-h">Partner Organisations</h2>
+        <p class="text-lg custom-p">
+            DGI Nodal Agency
+        </p>
+      </div>
+
+      <div class="tab-pane fade in active" id="content5">
+        <h2 class="custom-h">Is this Programme for You?</h2>
+        <p class="text-lg custom-p">
+            This programme is best suited for veterans, jawans, or officers who have transitioned to the civilian workforce or are planning to shift.<br></br>
+
+            The participant profile can include:<br><br>
+
+            •	Retiring Veterans<br><br>
+            •	Officer – Permanent Commission (20+ Yrs) and SSC (10-14 Yrs)<br><br>
+            •	Jawans – NCOs and ORs<br><br>
+            •	Retired Veterans 
+
+        </p>
+      </div>
+
+    </div>
+
+    <div>
+        <img
+        src="./Images//defence-image.png"
+        alt="defence-image"
+        class="img-fluid top-img defence-photo"
+        width="33%"
+      />
+
+      <img
+        src="./Images//defence-image-2.png"
+        alt="defence-image"
+        class="img-fluid top-img defence-photo"
+        width="33%"
+      />
+
+      <img
+        src="./Images//defence-image-4.png"
+        alt="defence-image defence-photo"
+        class="img-fluid top-img defence-photo"
+        width="33%"
+      />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
